@@ -1,0 +1,123 @@
+:root {
+  /* Marca */
+  --color-primary: #2563EB;
+  --color-primary-dark: #1E3A8A;
+
+  /* Textos */
+  --color-text: #0F172A;
+  --color-text-secondary: #64748B;
+
+  /* Superfícies */
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E8F0;
+
+  /* Estados */
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    padding: 32px;
+    border-radius: 16px;
+
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.headerLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.headerLogin h2 {
+    color: var(--color-primary);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.headerLogin p {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formLogin label {
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.formLogin input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 12px;
+
+    font: inherit;
+    color: var(--color-text);
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.formLogin input:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 1px;
+}
+
+.btnLogin {
+    margin-top: 8px;
+    padding: 12px;
+
+    font: inherit;
+    font-weight: 600;
+    color: #FFFFFF;
+
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnLogin:hover {
+    background-color: var(--color-primary-dark);
+}
+
