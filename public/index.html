@@ -6,16 +6,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="./js/login.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Login | HekpDesk</title>
 </head>
 <body>
+
+    <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="false"></div>
+
     <main class="login">
         <div class="headerLogin">
             <h2>Bem-vindo de volta</h2>
             <p>Entre com suas credenciais para continuar.</p>
         </div>
-        <form action="" class="formLogin">
+        <form id="formLogin" class="formLogin">
             <label for="txtEmail">E-mail</label>
             <input type="email" name="txtEmail" id="txtEmail" placeholder="Digite seu E-mail" autocomplete="username" required>
             <label for="txtSenha">Senha</label>
