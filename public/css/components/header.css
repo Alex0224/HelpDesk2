@@ -1,0 +1,104 @@
+
+/* =========================
+   HEADER DO DASHBOARD
+========================= */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    min-height: 82px;
+    padding: 16px 24px;
+
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Busca global */
+.busca {
+    flex: 1;
+    min-width: 0;
+    max-width: 640px;
+}
+
+#buscarGlobal {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 16px;
+
+    font: inherit;
+    font-size: 14px;
+    color: var(--color-text);
+
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+
+    transition:
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+#buscarGlobal::placeholder {
+    color: var(--color-text-secondary);
+}
+
+#buscarGlobal:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgb(37 99 235 / 12%);
+}
+
+/* Dados do usuário */
+.dadosUsuario {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    flex-shrink: 0;
+    min-width: 0;
+    text-align: right;
+}
+
+.dadosUsuario h2 {
+    color: var(--color-text);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.dadosUsuario p {
+    color: var(--color-text-secondary);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+    .cabecalho {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+
+        padding: 16px;
+    }
+
+    .busca {
+        max-width: none;
+    }
+
+    .dadosUsuario {
+        text-align: left;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #buscarGlobal {
+        transition: none;
+    }
+}

@@ -128,6 +128,8 @@ async function validarCampos() {
                 dados.mensagem || "Login realizado com sucesso.",
                 "success"
             );
+
+            window.location.href = "/dashboard";
         } else {
             mostrarToast(
                 dados.mensagem || dados.erro || "Não foi possível realizar o login.",

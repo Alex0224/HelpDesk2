@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+#sidebar {
+    flex: 0 0 260px;
+    width: 260px;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+/* Área à direita da sidebar */
+.layoutPrincipal {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    min-width: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+/* Cabeçalho */
+#header {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Conteúdo principal */
+#conteudoPrincipal {
+    flex: 1;
+    min-width: 0;
+    padding: 24px;
+
+    background-color: var(--color-background);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+    #sidebar {
+        flex-basis: 76px;
+        width: 76px;
+    }
+
+    #conteudoPrincipal {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #sidebar {
+        flex-basis: 0;
+        width: 0;
+        min-width: 0;
+    }
+
+    #conteudoPrincipal {
+        padding: 12px;
+    }
+}
