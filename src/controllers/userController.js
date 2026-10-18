@@ -90,4 +90,21 @@ function obterUsuarioAutenticado(req, res){
     });
 }
 
-module.exports = { login, obterUsuarioAutenticado }
+function logout(req, res){
+    req.session.destroy(erro =>{
+        if(erro){
+            return res.status(500).json({
+                mensagem: "Erro ao encerrar a sessão."
+            });
+        }
+
+        res.clearCookie("connect.sid");
+
+        return res.status(200).json({
+            mensagem: "Logout realizado com sucesso."
+        });
+        
+    });
+}
+
+module.exports = { login, obterUsuarioAutenticado, logout }

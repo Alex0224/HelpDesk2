@@ -20,6 +20,9 @@ importers:
       express-session:
         specifier: ^1.19.0
         version: 1.19.0(supports-color@5.5.0)
+      lucide:
+        specifier: ^1.59.0
+        version: 1.59.0
       mysql2:
         specifier: ^3.24.5
         version: 3.24.5(@types/node@26.6.5)
@@ -291,6 +294,9 @@ packages:
   lru.min@1.1.5:
     resolution: {integrity: sha512-5J9ysMYUpYIg9RF2vJpy9SinEmSviFSe0GyPpCQ4L5QSkLAgeLXlTAOu2ZwWUU5m+0SBl6gUU1R1ZQB3aKypfA==}
     engines: {bun: '>=1.0.0', deno: '>=1.30.0', node: '>=8.0.0'}
+
+  lucide@1.59.0:
+    resolution: {integrity: sha512-0KTOAFYlTuLHdJOqnRCuPhscU29xtx/QnlHyrOfK0FynDhuPm50O3BH/e4wRnOS67ph0z7uovveCVcXUPLTPBw==}
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -804,6 +810,8 @@ snapshots:
   long@5.3.2: {}
 
   lru.min@1.1.5: {}
+
+  lucide@1.59.0: {}
 
   math-intrinsics@1.1.0: {}
 
